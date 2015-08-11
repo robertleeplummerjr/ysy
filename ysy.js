@@ -1,4 +1,4 @@
-var YSY = (function() {
+var YSY = (function($) {
 
     /**
      * JavaScript function to match (and return) the video Id
@@ -72,6 +72,7 @@ var YSY = (function() {
             return uis;
         },
         template: '<iframe \
+            class="{{classes}}"\
             width="{{width}}"\
             height="{{height}}"\
             src="https://www.youtube.com/embed/{{id}}"\
@@ -81,8 +82,18 @@ var YSY = (function() {
 
     YSY.defaults = {
         width: 560,
-        height: 315
+        height: 315,
+        classes: ''
+    };
+
+    if ($ === undefined) return YSY;
+
+    $.fn.ysy = function(settings) {
+        return $(this).each(function() {
+            this.ysy = new YSY(this, settings);
+            this.ysy.build();
+        });
     };
 
     return YSY;
-})();
+})(window.jQuery);

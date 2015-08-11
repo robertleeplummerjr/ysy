@@ -2,14 +2,35 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title></title>
+    <title>YSY - (You Said Youtube)</title>
 </head>
 <body>
-<a href="https://www.youtube.com/watch?v=cRx-zdO8FqI">https://www.youtube.com/watch?v=cRx-zdO8FqI</a>
+<h2>Standard</h2>
+<div id="standard-ysy">
+    <a href="https://www.youtube.com/watch?v=cRx-zdO8FqI">https://www.youtube.com/watch?v=cRx-zdO8FqI</a>
+</div>
+<pre>
+    //standard ysy
+    (new YSY(document.querySelector('#standard-ysy')))
+        .build();
+</pre>
+<h2>jQuery</h2>
+<div id="jquery-ysy">
+    <a href="https://www.youtube.com/watch?v=IUGzCPpWzn8">https://www.youtube.com/watch?v=IUGzCPpWzn8</a>
+</div>
+<pre>
+    //jquery ysy
+    $('#jquery-ysy').ysy();
+</pre>
 </body>
+<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
 <script src="ysy.js"></script>
 <script>
-    (new YSY(document.querySelector('body')))
+    //standard ysy
+    (new YSY(document.querySelector('#standard-ysy')))
         .build();
+
+    //jquery ysy
+    $('#jquery-ysy').ysy();
 </script>
 </html>
