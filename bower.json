@@ -1,0 +1,26 @@
+{
+  "name": "ysy",
+  "main": "ysy.js",
+  "version": "0.0.0",
+  "homepage": "https://github.com/robertleeplummerjr/ysy",
+  "authors": [
+    "Robert Lee Plummer Jr <robertleeplummerjr@gmail.com>"
+  ],
+  "description": "you said youtube player - detects in comments, and creates an embeded player",
+  "keywords": [
+    "youtube",
+    "comment",
+    "player",
+    "conversation",
+    "youtube.com",
+    "embeded"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
